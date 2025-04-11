@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ice Cream Delight</title>
   <link rel="stylesheet" href="icecreamtubs.css" />
-  <script defer src="script.js"></script>
+  <script defer src="icecreamtubs.js"></script>
+  <!-- Add this inside your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -13,30 +16,6 @@
 </head>
 <body>
      
-  <!-- Top Shipping Info -->
-  <div class="top-strip">
-    <p>FREE SHIPPING above Rs.1000 in Mangalore</p>
-  </div>
-
-  <!-- Header -->
-  <header class="main-header">
-    <div class="nav-left">
-      <i class="fas fa-search" id="search-toggle"></i>
-    </div>
-    <div class="logo">
-      <img src="Screenshot_2025-04-10_213336-removebg-preview.png" alt="Logo" />
-    </div>
-    <div class="nav-right">
-      <i class="fas fa-shopping-cart"></i>
-      <span class="cart-count">0</span>
-    </div>
-  </header>
-
-  <!-- Search Bar -->
-  <div class="search-bar" id="search-bar">
-    <input type="text" placeholder="Search for ice cream..." />
-  </div>
-
   <!-- Navigation -->
   <nav class="menu-bar">
     <a href="index.html">HOME</a>
@@ -56,53 +35,254 @@
       <div class="product-grid">
 
         <!--row1-->
-        <div class="product-card">
-          <img src="https://img.freepik.com/premium-photo/chocolate-ice-cream-scoop_909109-709.jpg" alt="Vietnamese Iced Coffee" />
-          <h3>Vietnamese Iced Coffee</h3>
-          <p class="price">₹299</p>
+        <div class="product-card"
+           data-name="Vietnamese Iced Coffee"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://img.freepik.com/premium-photo/chocolate-ice-cream-scoop_909109-709.jpg"
+           data-img2="https://www.tastingtable.com/img/gallery/dark-chocolate-tahini-cottage-cheese-ice-cream-recipe/step-5-serve-1709842906.jpg">
+
+          <div class="image-wrapper">
+              <img src="https://img.freepik.com/premium-photo/chocolate-ice-cream-scoop_909109-709.jpg" alt="Vietnamese Iced Coffee" />
+          </div>
+
+          <h3 style="color:#084c9e">Vietnamese Iced Coffee</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-          <img src="https://th.bing.com/th/id/OIP.03iwQn4XQYjym1f429oZkQHaHa?w=626&h=626&rs=1&pid=ImgDetMain" alt="Sea Salt Caramel" />
-          <h3>Sea Salt Caramel</h3>
-          <p class="price">₹299</p>
+
+
+        <div class="product-card"
+           data-name="Sea Salt Caramel"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://th.bing.com/th/id/OIP.03iwQn4XQYjym1f429oZkQHaHa?w=626&h=626&rs=1&pid=ImgDetMain"
+           data-img2="https://awesomeon20.com/wp-content/uploads/2023/07/Chocolate-Chip-Ice-Cream-2-750x750.jpg">
+
+          <div class="image-wrapper">
+              <img src="https://th.bing.com/th/id/OIP.03iwQn4XQYjym1f429oZkQHaHa?w=626&h=626&rs=1&pid=ImgDetMain" alt="Sea Salt Caramel" />
+          </div>
+
+          <h3 style="color:#084c9e">Sea Salt Caramel</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-          <img src="https://img.freepik.com/premium-photo/chocolate-icecream-cup_758367-57354.jpg" alt="Belgian Chocolate" />
-          <h3>Belgian Chocolate</h3>
-          <p class="price">₹299</p>
+
+
+        <div class="product-card"
+           data-name="Belgian Chocolate"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://img.freepik.com/premium-photo/chocolate-icecream-cup_758367-57354.jpg"
+           data-img2="https://saltandbaker.com/wp-content/uploads/2018/02/best-homemade-chocolate-ice-cream-290x377.jpg">
+
+          <div class="image-wrapper">
+              <img src="https://img.freepik.com/premium-photo/chocolate-icecream-cup_758367-57354.jpg" alt="Belgian Chocolate" />
+          </div>
+
+          <h3 style="color:#084c9e">Belgian Chocolate</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-            <img src="https://img.freepik.com/premium-photo/icecream_920207-6221.jpg" alt="Vietnamese Iced Coffee" />
-            <h3>Rocky Road Ice Cream Tub</h3>
-            <p class="price">₹299</p>
+
+
+        <div class="product-card"
+           data-name="BRocky Road Ice Cream Tub"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://img.freepik.com/premium-photo/icecream_920207-6221.jpg"
+           data-img2="https://th.bing.com/th/id/OIP.nqM1UppJmN7WOssIDQnnmQAAAA?w=320&h=320&rs=1&pid=ImgDetMain">
+
+          <div class="image-wrapper">
+              <img src="https://img.freepik.com/premium-photo/icecream_920207-6221.jpg" alt="Rocky Road Ice Cream Tub" />
+          </div>
+
+          <h3 style="color:#084c9e">Rocky Road Ice Cream Tub</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
 
         <!--row2-->
 
-        <div class="product-card">
-            <img src="https://th.bing.com/th/id/OIP.6m06gQcWOF2KvTRHy_stOQHaHa?w=626&h=626&rs=1&pid=ImgDetMain" alt="Vietnamese Iced Coffee" />
-            <h3>Peach Lime Sorbet - Ice Cream Tub</h3>
-            <p class="price">₹299</p>
+        <div class="product-card"
+           data-name="Peach Lime Sorbet Ice Cream Tub"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://th.bing.com/th/id/OIP.6m06gQcWOF2KvTRHy_stOQHaHa?w=626&h=626&rs=1&pid=ImgDetMain"
+           data-img2="https://icecreamfromscratch.com/wp-content/uploads/2024/05/Cookies-and-Cream-Ice-Cream-Recipe-1-480x480.jpg">
+
+          <div class="image-wrapper">
+              <img src="https://th.bing.com/th/id/OIP.6m06gQcWOF2KvTRHy_stOQHaHa?w=626&h=626&rs=1&pid=ImgDetMain" alt="Peach Lime Sorbet Ice Cream Tub" />
+          </div>
+
+          <h3 style="color:#084c9e">Peach Lime Sorbet Ice Cream Tub</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-            <img src="https://img.freepik.com/premium-photo/icecream_920207-6222.jpg" alt="Vietnamese Iced Coffee" />
-            <h3>Vegan Dark Chocoloate - Ice Cream Tub</h3>
-            <p class="price">₹299</p>
+
+        <div class="product-card"
+           data-name="Vegan Dark Chocoloate Ice Cream Tub"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://img.freepik.com/premium-photo/icecream_920207-6222.jpg"
+           data-img2="https://thumbs.dreamstime.com/b/ice-cream-17536411.jpg">
+
+          <div class="image-wrapper">
+              <img src="https://img.freepik.com/premium-photo/icecream_920207-6222.jpg" alt="Vegan Dark Chocoloate Ice Cream Tub" />
+          </div>
+
+          <h3 style="color:#084c9e">Vegan Dark Chocoloate Ice Cream Tub</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-            <img src="https://img.freepik.com/premium-photo/ice-cream-cone-with-strawberries-chocolate-it_662214-170000.jpg" alt="Vietnamese Iced Coffee" />
-            <h3>Mixed Berry Mascarpone - Ice Cream Tub</h3>
-            <p class="price">₹299</p>
+
+        <div class="product-card"
+           data-name="Mixed Berry Mascarpone Ice Cream Tub"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://img.freepik.com/premium-photo/ice-cream-cone-with-strawberries-chocolate-it_662214-170000.jpg"
+           data-img2="https://th.bing.com/th/id/OIP.XDCoGAIX4X0YlmZDpujDjgHaLH?pid=ImgDet&w=184&h=276&c=7&dpr=1.3">
+
+          <div class="image-wrapper">
+              <img src="https://img.freepik.com/premium-photo/ice-cream-cone-with-strawberries-chocolate-it_662214-170000.jpg" alt="Mixed Berry Mascarpone Ice Cream Tub" />
+          </div>
+
+          <h3 style="color:#084c9e">Mixed Berry Mascarpone  Ice Cream Tub</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
-        <div class="product-card">
-            <img src="https://img.freepik.com/premium-photo/soft-serve-chocolate-ice-cream-swirl_1169880-31560.jpg" alt="Vietnamese Iced Coffee" />
-            <h3>Toasted Coconut Macaroon - Ice Cream Tub</h3>
-            <p class="price">₹299</p>
+
+        <div class="product-card"
+           data-name="Toasted Coconut Macaroon Ice Cream Tub"
+           data-price-100="199"
+           data-price-500="299"
+           data-img1="https://img.freepik.com/premium-photo/soft-serve-chocolate-ice-cream-swirl_1169880-31560.jpg"
+           data-img2="https://diethood.com/wp-content/uploads/2011/07/tiramisu-ice-cream-8-1024x1536.jpg">
+
+          <div class="image-wrapper">
+              <img src="https://img.freepik.com/premium-photo/soft-serve-chocolate-ice-cream-swirl_1169880-31560.jpg" alt="Toasted Coconut Macaroon Ice Cream Tub" />
+          </div>
+
+          <h3 style="color:#084c9e">Toasted Coconut Macaroon Ice Cream Tub</h3>
+
+          <div class="size-toggle">
+             <button class="size-btn active" data-size="100">100ml</button>
+             <button class="size-btn" data-size="500">500ml</button>
+          </div>
+
+          <p class="price">₹199</p>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star inactive">★</span>
+          </div>
+          
+          <button class="cart-btn">Add to Cart</button>
         </div>
+
+        
     </div>
   </section>
-  
-  
 
-</body>
-</html>
+  </body>
+  </html>
