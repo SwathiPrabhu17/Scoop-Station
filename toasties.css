@@ -1,0 +1,198 @@
+.menu-bar {
+    background-color: #ffe5d9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 12px 0;
+  }
+  
+  .menu-bar a {
+    text-decoration: none;
+    color: #004d99;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .menu-bar a:hover {
+    color: #ff6600;
+  }
+
+/* =============================================== */
+/* ========== toasties carousel =================== */
+/* =============================================== */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Carousel Container */
+.main-carousel {
+  margin: 40px auto;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+/* Carousel Slide Styles */
+.carousel-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  min-height: 400px;
+  margin: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 80vh; /* Adjust based on your header/footer */
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  /* Dark smoky border effect */
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 0, 0, 0.2),
+    0 0 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Slide Content Layout */
+.slide-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Image Box Styling */
+.image-box {
+  flex-shrink: 0;
+  width: 320px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Box Styling */
+.text-box {
+  max-width: 500px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  word-break: break-word;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f25757;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #144272;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Shop Now Link */
+.shop-link {
+  background-color: #ef6059;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: fit-content;
+}
+
+.shop-link:hover {
+  background-color: #f05e2d;
+  transform: scale(1.05);
+}
+
+/* Optional: Carousel Navigation */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.carousel-nav button {
+  background-color: #fff;
+  border: 2px solid #f25757;
+  padding: 5px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.carousel-nav button:hover {
+  background-color: #f25757;
+  color: white;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .carousel-slide {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .image-box {
+    width: 90%;
+  }
+
+  .text-box {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .product-name {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+

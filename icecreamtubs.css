@@ -146,7 +146,7 @@ body {
 
 .cart-btn {
   padding: 10px 20px;
-  background: #50cc0c;
+  background: #e65c00;
   color: white;
   border: none;
   border-radius: 20px;
@@ -157,3 +157,6 @@ body {
 .cart-btn:hover {
   background: #c95909;
 }
+
+
+
