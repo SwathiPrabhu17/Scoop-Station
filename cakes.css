@@ -1,0 +1,82 @@
+.menu-bar {
+    background-color: #ffe5d9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 12px 0;
+  }
+  
+  .menu-bar a {
+    text-decoration: none;
+    color: #004d99;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .menu-bar a:hover {
+    color: #ff6600;
+  }
+  
+/* =============================================== */
+/* === Explore Scoop Station World === */
+/* =============================================== */
+
+.explore-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+  }
+  
+  .explore-title {
+    color: #004d99;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .explore-subtitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .explore-item {
+    background-color: #fde9d6;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .explore-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .explore-item img {
+    width: 100%;
+    height: 200px; /* uniform height */
+    object-fit: cover;
+    display: block;
+  }
+  
+  
+  .explore-label {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #003366;
+    padding: 1rem;
+  }
+  
+

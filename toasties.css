@@ -19,6 +19,27 @@
     color: #ff6600;
   }
 
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .product-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #084c9e;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 0px; /* reduce this */
+    padding-top: opx; /* reduce this */
+  }
+  
 /* =============================================== */
 /* ========== toasties carousel =================== */
 /* =============================================== */
@@ -51,9 +72,9 @@ body {
   border-radius: 20px;
   min-height: 400px;
   margin: 10px;
-  width: 100%;
+  width: 110%;
   box-sizing: border-box;
-  height: 80vh; /* Adjust based on your header/footer */
+  height: 65vh; /* Adjust based on your header/footer */
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -103,7 +124,7 @@ body {
 .product-name {
   font-size: 24px;
   font-weight: bold;
-  color: #f25757;
+  color: #111010;
   margin-bottom: 10px;
 }
 
@@ -111,29 +132,27 @@ body {
 .price {
   font-size: 20px;
   font-weight: bold;
-  color: #144272;
+  color: #6d0d7e;
   margin-bottom: 10px;
 }
 
 /* Description */
 .description {
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 /* Shop Now Link */
 .shop-link {
   background-color: #ef6059;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  width: fit-content;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
 .shop-link:hover {
