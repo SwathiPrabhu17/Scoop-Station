@@ -23,60 +23,184 @@
 /* === Explore Scoop Station World === */
 /* =============================================== */
 
-.explore-section {
-    text-align: center;
-    padding: 3rem 1rem;
-    background-color: #fff;
-  }
-  
-  .explore-title {
-    color: #004d99;
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-  }
-  
-  .explore-subtitle {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 2rem;
-  }
-  
-  .explore-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .explore-item {
-    background-color: #fde9d6;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    transition: transform 0.3s ease;
-  }
-  
-  .explore-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .explore-item img {
-    width: 100%;
-    height: 200px; /* uniform height */
-    object-fit: cover;
-    display: block;
-  }
-  
-  
-  .explore-label {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #003366;
-    padding: 1rem;
-  }
-  
 
+.section-title {
+  font-size: 36px;
+  color: #084c9e;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 0px; /* reduce this */
+  padding-top: opx; /* reduce this */
+}
+
+div.a {
+  text-align: center;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: whitesmoke;
+  color: white;
+}
+
+section {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.col-md-4 {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .col-md-4 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.card {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.cover, .card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transition: transform 1s ease;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  transform: rotateY(0deg);
+  overflow: hidden;
+}
+
+.card.flip .cover {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  background: #0b0f08;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.card.flip .card-back {
+  z-index: 3;
+  transform: rotateY(0deg);
+}
+
+.cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.cover h1,
+.cover .price {
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.cover h1 {
+  bottom: 50px;
+  left: 20px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.cover .price {
+  top: 30px;
+  right: 20px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.card-back a {
+  color: white;
+  border: 1px solid white;
+  padding: 14px 32px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.card-back a:hover {
+  background-color: white;
+  color: #0b0f08;
+}
+
+/* Background Images */
+.item-a {
+  background-image: url('https://img.freepik.com/premium-photo/front-view-delicious-chocolate-cake_839035-91411.jpg');
+}
+
+.item-b {
+  background-image: url('https://img.freepik.com/premium-photo/ice-cream-pastel-color-drip-cake-professional-advertising-food-photography_920594-4842.jpg');
+}
+
+.item-c {
+  background-image: url('https://img.freepik.com/premium-photo/cake-design_890746-14896.jpg');
+}
+
+.item-d {
+  background-image: url('https://img.freepik.com/premium-photo/mouthwatering-4k-image-strawberry-cake-adorned-with-luscious-cherry-top_717732-7071.jpg');
+}
+
+.item-e {
+  background-image: url('https://i.pinimg.com/originals/fb/e0/c2/fbe0c2c127370161db15a34158f83b47.jpg');
+}
+
+.item-f {
+  background-image: url('https://sugarspiceandglitter.com/wp-content/uploads/2018/06/chocolate-mousse-cake.jpg.webp');
+}
+
+.item-g {
+  background-image: url('https://img.freepik.com/premium-photo/cake-with-ice-cream-berries-it_265515-275.jpg');
+}
+
+.item-h {
+  background-image: url('https://img.freepik.com/premium-photo/delecious-cake_824239-643.jpg');
+}
+
+.item-i {
+  background-image: url('https://hillstreetgrocer.com/application/files/1015/4527/1889/berry_delicious_ice_cream_cake.jpg');
+}
+ 
